@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModAlarmDictionaries>
+  <Dictionary key="Scada.Server.Modules.ModAlarm.View.FrmAlarmConfig">
+    <Phrase key="this">Серверный модуль звуковой сигнализации</Phrase>
+    <Phrase key="lblInfo">Модуль воспроизводит выбранный звуковой сигнал пока значение указанного канала соответствует условию сравнения. Значение по умолчанию >=1</Phrase>
+    <Phrase key="btnAdd">Добавить</Phrase>
+    <Phrase key="btnRemove">Удалить</Phrase>
+    <Phrase key="btnSave">Сохранить</Phrase>
+    <Phrase key="btnCancel">Отменить</Phrase>
+    <Phrase key="btnClose">Закрыть</Phrase>
+    <Phrase key="btnBrowse">Обзор</Phrase>
+    <Phrase key="columnChannel">Канал</Phrase>
+    <Phrase key="columnSoundFile">Аудиофайл</Phrase>
+	<Phrase key="columnEqual">Выражение</Phrase>
+	<Phrase key="msgAlreadyExists">Данный канал уже используется. Изменить его?</Phrase>
+    <Phrase key="msgWarning">Предупреждение</Phrase>
+  </Dictionary>
+  <Dictionary key="Scada.Server.Modules.ModAlarm.View.FrmAlarm">
+    <Phrase key="this">Добавить аварию</Phrase>
+    <Phrase key="lblChannel">Номер входного канала:</Phrase>
+    <Phrase key="lblPath">Аудиофайл:</Phrase>
+    <Phrase key="btnOk">ОК</Phrase>
+    <Phrase key="btnCansel">Отмена</Phrase>
+    <Phrase key="btnBrowse">Обзор</Phrase>
+    <Phrase key="btnTest">Проверка</Phrase>
+    <Phrase key="openFileDialog.Filter">WAV аудио файл (*.wav)|*.wav</Phrase>
+	<Phrase key="isEdit">Изменить аварию</Phrase>
+  </Dictionary>
+</ModAlarmDictionaries>
