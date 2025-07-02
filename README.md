@@ -1,6 +1,6 @@
 **ModAlarm v6.4.1.0** - Это fork модуля для версии RapidScada 5
 
-Серверный модуль для ![RapidScada](https://rapidscada.ru)  
+Серверный модуль для [RapidScada](https://rapidscada.ru)  
 Позволяет выводить звуковой сигнал тревоги.
 Звуковой сигнал тревоги воспроизводится только на сервере.
 Протестировано в Windows 10. Linux не поддерживается.
@@ -10,7 +10,7 @@
 
 **ModAlarm v6.4.1.0** - This is a fork of the module for RapidScada version 5
 
-Server module for the ![RapidScada](https://rapidscada.org/)  
+Server module for the [RapidScada](https://rapidscada.org/)  
 Allows you to output the alarm sound.
 The alarm sound plays only on the server.
 Tested on Windows 10. Linux not supported.
