@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<AssemblyVersion>6.4.1.0</AssemblyVersion>
+	<FileVersion>6.4.1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ScadaCommon">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaCommon.Log">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommon.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaServerCommon">
+      <HintPath>..\..\..\scada-v6-dll\ScadaServerCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Import Project="..\ModAlarm.Shared\ModAlarm.Shared.projitems" Label="Shared" />
+
+</Project>
