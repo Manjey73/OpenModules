@@ -1,3 +1,5 @@
+![DrvDbImportPlus](https://img.shields.io/github/downloads/Manjey73/OpenModules/ModAlarm_v6.4.1.0/total)
+
 **ModAlarm v6.4.1.0** - Это fork модуля версии RapidScada 5
 
 Серверный модуль для [RapidScada](https://rapidscada.ru)  
