@@ -12,6 +12,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)Config\ModuleConfig.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ProdCalendar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SoftPlc.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ProgramZ.cs" />
   </ItemGroup>
 </Project>
