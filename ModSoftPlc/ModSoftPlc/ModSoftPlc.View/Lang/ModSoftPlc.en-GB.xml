@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModSoftPlcDictionaries>
+	<Dictionary key="Scada.Server.Modules.ModSoftPlc.View.Forms.FrmModuleConfig">
+		<Phrase key="AppTitle">Soft Plc Module</Phrase>
+		<Phrase key="tbNew.Text">New Configuration</Phrase>
+		<Phrase key="btOpen.Text">Open</Phrase>
+		<Phrase key="tbSave.Text">Save</Phrase>
+		<Phrase key="tbSaveAs.Text">SaveAs</Phrase>
+		<Phrase key="btOK.Text">Apply</Phrase>
+		<Phrase key="btCancel.Text">Close</Phrase>
+
+		<Phrase key="MainNode">SoftPlc</Phrase>
+		<Phrase key="VisibleLogPrgFile">Show Log Files</Phrase>
+		<Phrase key="SaveLogPrgTime">Saving TimeMin</Phrase>
+		<Phrase key="IterationTime">Iteration TimeMs</Phrase>
+
+		<Phrase key="Calendar">Calendar</Phrase>
+		<Phrase key="Day">Day</Phrase>
+		<Phrase key="Week">Week</Phrase>
+		<Phrase key="date">Date</Phrase>
+		<Phrase key="h">Holiday number</Phrase>
+		<Phrase key="t">Type of day</Phrase>
+		<Phrase key="f">Transfer day</Phrase>
+
+		<Phrase key="Program">Program</Phrase>
+		<Phrase key="Variable">Variable</Phrase>
+
+		<Phrase key="AddGroup">Add Group</Phrase>
+		<Phrase key="AddParameters">Add Parameters</Phrase>
+		<Phrase key="AddCalendar">Add Calendar</Phrase>
+		<Phrase key="AddDay">Add Day</Phrase>
+		<Phrase key="AddWeek">Add Week</Phrase>
+		<Phrase key="AddProgram">Add Program</Phrase>
+		<Phrase key="AddVariable">Add Variable</Phrase>
+		<Phrase key="AddComment">Add Comment</Phrase>
+		<Phrase key="AddText">Add Text</Phrase>
+		<Phrase key="Delete">Delete</Phrase>
+
+		<Phrase key="TitleLoadProject">Load project...</Phrase>
+		<Phrase key="FilterProject">XML (*.xml)|*.xml|All files (*.*)|*.*</Phrase>
+		<Phrase key="Active">Active</Phrase>
+
+		<Phrase key="TasksLibrary">Tasks Library</Phrase>
+		<Phrase key="Task">Task</Phrase>
+		<Phrase key="ProgramType">Program Type</Phrase>
+		<Phrase key="Restart">Restart Program</Phrase>
+		<Phrase key="TaskCycle">Task Cycle</Phrase>
+
+		<Phrase key="VariableName">VariableName</Phrase>
+		<Phrase key="Data">Value</Phrase>
+		<Phrase key="Command">Command Value</Phrase>
+		<Phrase key="CnlNum">Channel Number</Phrase>
+		<Phrase key="CnlCode">Tag Channel</Phrase>
+		<Phrase key="Initialize">Initialize</Phrase>
+		<Phrase key="Retain">Retain</Phrase>
+
+		<Phrase key="VariableType">Type of variable</Phrase>
+		<Phrase key="Description">Description</Phrase>
+
+		<Phrase key="DayNum">Day Number</Phrase>
+		<Phrase key="WeekNum">Day Of Week</Phrase>
+
+		<Phrase key="dgvAttrName">Parameter</Phrase>
+		<Phrase key="dgvAttrValue">Value</Phrase>
+	</Dictionary>
+	<Dictionary key="Scada.Server.Modules.ModSoftPlc.View.Forms.FrmParameters">
+		<Phrase key="gbComment.Text">Comment</Phrase>
+	</Dictionary>
+</ModSoftPlcDictionaries>
