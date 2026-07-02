@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModSoftPlcDictionaries>
+	<Dictionary key="Scada.Server.Modules.ModSoftPlc.View.Forms.FrmModuleConfig">
+		<Phrase key="AppTitle">Модуль Soft ПЛК</Phrase>
+		<Phrase key="tbNew.Text">Новая конфигурация</Phrase>
+		<Phrase key="btOpen.Text">Открыть</Phrase>
+		<Phrase key="tbSave.Text">Сохранить</Phrase>
+		<Phrase key="tbSaveAs.Text">Сохранить как</Phrase>
+		<Phrase key="btOK.Text">Применить</Phrase>
+		<Phrase key="btCancel.Text">Закрыть</Phrase>
+
+		<Phrase key="MainNode">Soft ПЛК</Phrase>
+		<Phrase key="VisibleLogPrgFile">Показывать Лог Файлов</Phrase>
+		<Phrase key="SaveLogPrgTime">Время Сохранения Мин</Phrase>
+		<Phrase key="IterationTime">Время Итерации Мс</Phrase>
+
+		<Phrase key="Calendar">Календарь</Phrase>
+		<Phrase key="Day">День</Phrase>
+		<Phrase key="Week">Неделя</Phrase>
+		<Phrase key="date">Дата</Phrase>
+		<Phrase key="h">Номер праздника</Phrase>
+		<Phrase key="t">Тип дня</Phrase>
+		<Phrase key="f">Перенос дня</Phrase>
+
+		<Phrase key="Program">Программа</Phrase>
+		<Phrase key="Variable">Переменная</Phrase>
+
+		<Phrase key="AddParameters">Добавить Параметры</Phrase>
+		<Phrase key="AddCalendar">Добавить Календарь</Phrase>
+		<Phrase key="AddDay">Добавить День</Phrase>
+		<Phrase key="AddWeek">Добавить Неделю</Phrase>
+		<Phrase key="AddProgram">Добавить Программу</Phrase>
+		<Phrase key="AddVariable">Добавить Переменную</Phrase>
+		<Phrase key="AddComment">Добавить Комментарий</Phrase>
+		<Phrase key="AddText">Добавить Текст</Phrase>
+		<Phrase key="Delete">Удалить</Phrase>
+
+		<Phrase key="TitleLoadProject">Загрузить проект...</Phrase>
+		<Phrase key="FilterProject">XML (*.xml)|*.xml|Все файлы (*.*)|*.*</Phrase>
+		<Phrase key="Active">Активность</Phrase>
+
+		<Phrase key="TasksLibrary">Библиотека Задач</Phrase>
+		<Phrase key="Task">Задача</Phrase>
+		<Phrase key="ProgramType">Тип Программы</Phrase>
+		<Phrase key="Restart">Перезапустить Программу</Phrase>
+		<Phrase key="TaskCycle">Цикл Задачи</Phrase>
+
+		<Phrase key="VariableName">Имя Переменной</Phrase>
+		<Phrase key="Data">Значение</Phrase>
+		<Phrase key="Command">Значение команды</Phrase>
+		<Phrase key="CnlNum">Номер Канала</Phrase>
+		<Phrase key="CnlCode">Код Канала</Phrase>
+		<Phrase key="Initialize">Инициализация</Phrase>
+		<Phrase key="Retain">Сохраняемость</Phrase>
+
+		<Phrase key="VariableType">Тип переменной</Phrase>
+		<Phrase key="Description">Описание</Phrase>
+
+		<Phrase key="DayNum">Номер Дня</Phrase>
+		<Phrase key="WeekNum">День Недели</Phrase>
+
+		<Phrase key="dgvAttrName">Параметр</Phrase>
+		<Phrase key="dgvAttrValue">Значение</Phrase>
+
+		<Phrase key="errAddParameter">Сперва необходимо удалить все параметры</Phrase>
+		<Phrase key="errAddText">Текстовое поле уже существует</Phrase>
+	</Dictionary>
+	<Dictionary key="Scada.Server.Modules.ModSoftPlc.View.Forms.FrmParameters">
+		<Phrase key="gbComment.Text">Комментарий</Phrase>
+	</Dictionary>
+</ModSoftPlcDictionaries>
