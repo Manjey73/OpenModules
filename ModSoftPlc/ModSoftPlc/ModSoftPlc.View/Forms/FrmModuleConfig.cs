@@ -718,7 +718,7 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
                                             CnlNum = "",
                                             Initialize = init,
                                             Retain = ret,
-                                            Data = "",
+                                            Data = string.IsNullOrEmpty(valu.Value.Data) ? "" : valu.Value.Data,
                                             Command = ""
                                         };
 
@@ -768,9 +768,10 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
                                 CreateNode(e);
                             }
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            //rtb_Log.Text += $"Мы в catch taskName" + Environment.NewLine; // TEST
+                            string err = Locale.IsRussian ? "Используются переменные из внешних библиотек,\nПеременные необходимо настроить вручную" : "Variables from external libraries are used,\nThe variables must be configured manually";
+                            rtb_Log.Text += Environment.NewLine + $"Ошибка: {ex.Message}" + Environment.NewLine + $"{err}" ; // TEST
                         }
                     }
                     // TEST TEST
@@ -1143,7 +1144,7 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
         private void tbCalendar_Click(object sender, EventArgs e)
         {
             //rtb_Log.Text += $"Нажата кнопка ProdCalendar" + Environment.NewLine;
-            calendar prodCal = new calendar();
+            CalendarFile prodCal = new CalendarFile();
 
             try
             {
@@ -1156,8 +1157,8 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
                     Stream st = response.Content.ReadAsStream();
 
                     st.Position = 0;
-                    XmlSerializer serializer = new XmlSerializer(typeof(calendar));
-                    prodCal = serializer.Deserialize(st) as calendar;
+                    XmlSerializer serializer = new XmlSerializer(typeof(CalendarFile));
+                    prodCal = serializer.Deserialize(st) as CalendarFile;
                     st.Close();
                 }
 
