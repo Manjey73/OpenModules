@@ -1,5 +1,3 @@
-using ScadaCommFunc;
-
 namespace Scada.Server.Modules.ModSoftPlc
 {
     // Необходимый блок, чтобы добавлять CustomAttributes к описаниям переменных. По VarType определяется какая это переменная для Pro версии - Init = инициализация значения, Retain = Сохраняемая переменная, Input = Входная переменная, Output = Выходная переменная
@@ -55,7 +53,7 @@ namespace Scada.Server.Modules.ModSoftPlc
         public bool terminated = false; // Переменная остановки цикла для остановки программы и(или) для закрытия потока (Служебная)
 
         // The default mode in the ScadaCommFunc library is true - the heater mode, you don't have to specify it.
-        ControlMod.Hyst hyst1 = new() { mode = true }; // mode в библитотеке ScadaCommFunc по умолчанию true - режим нагревателя, можно не указывать
+        private ControlMod.Hyst hyst1 = new() { mode = true }; // mode в библитотеке ScadaCommFunc по умолчанию true - режим нагревателя, можно не указывать
 
         public void Run()
         {
