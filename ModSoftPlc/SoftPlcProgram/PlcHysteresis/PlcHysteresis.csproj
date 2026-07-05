@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="ScadaCommFunc">
-      <HintPath>..\..\..\scada-v6-dll\ScadaCommFunc.dll</HintPath>
+    <Reference Include="ModSoftPlc.Library">
+      <HintPath>..\ModSoftPlcLibrary\bin\Release\net8.0\ModSoftPlc.Library.dll</HintPath>
     </Reference>
   </ItemGroup>
 
