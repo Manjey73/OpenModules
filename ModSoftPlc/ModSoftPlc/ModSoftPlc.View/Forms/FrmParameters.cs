@@ -31,8 +31,7 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
         {
             public string VarType { get; set; }
             public string Description { get; set; }
-
-            public string Data { get; set; } // TEST - добавит сюда значение переменной ????
+            public string Data { get; set; }
         }
 
         private List<string> listOfVar;
@@ -41,7 +40,7 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
         // Список задач, которые требуется исключить из списка выбора. Должны быть доступны только те, программы которых можно выполнить.
         private List<string> ignoreTask = new List<string> { "SoftPlc", "FrmModuleConfig", "FrmParameters", "Calendar",  // "Func", "TON",
         "ProgramX", "DayX", "WeekX", "VariableX", "TitleX", "DayH","TimeSpanExtender", "ProgramzAttribute", "AttributeOfVar", 
-        "calendar", "holiday", "day"};
+        "CalendarFile", "Holiday", "CalendarDay"};
         private List<string> listOfTask;
         #endregion Variables
 
@@ -829,7 +828,15 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
                 type = typelist;
             }
 
-            object instance = Activator.CreateInstance(type);
+            object instance = null;
+            try
+            {
+                instance = Activator.CreateInstance(type); // Падает тут, потому что пытается загрузить переменную из ScadaCommFunc - Как их игнорировать?
+            }
+            catch (TargetInvocationException ex)
+            {
+                frmParentGloabal.rtb_Log.Text += Environment.NewLine + $"Ошибка: {ex.Message}" + Environment.NewLine; // TEST TEST TEST TEST
+            }
 
             // Добавляем имена переменных в список - Как сделать проверку уже добавленных в параметры входов, выходов имен и удалять из списка для нового добавления
             // и обратно возвращать, если имя удалили ?
@@ -843,17 +850,22 @@ namespace Scada.Server.Modules.ModSoftPlc.View.Forms
 
                     if (data != null && data.ConstructorArguments.Count > 0)
                     {
+                        string midata = "";
+                        try
+                        {
+                            midata = mi.GetValue(instance).ToString();
+                        }
+                        catch { }
+
                         attributOfVar = new AttributeOfVar
                         {
                             VarType = data.ConstructorArguments[0].Value.ToString(),
                             Description = data.ConstructorArguments[1].Value.ToString(),
 
-                            Data = mi.GetValue(instance).ToString() // TEST TEST TEST ----------------------РАБОТАЕТ---------------
-
+                            Data = midata // TEST TEST TEST ----------------------РАБОТАЕТ--------------- на чем-то падает....
                         };
 
-                        frmParentGloabal.rtb_Log.Text += $"{mi.Name}  --  {attributOfVar.Data}" + Environment.NewLine; // TEST
-
+                        //frmParentGloabal.rtb_Log.Text += $"{mi.Name}  --  {attributOfVar.Data}" + Environment.NewLine; // TEST TEST TEST TEST
 
                     }
                     dictOfAttr.Add(mi.Name, attributOfVar);
