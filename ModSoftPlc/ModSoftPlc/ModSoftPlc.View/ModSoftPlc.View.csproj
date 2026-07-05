@@ -5,13 +5,13 @@
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>6.4.1.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>6.4.1.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="ScadaCommFunc">
-      <HintPath>..\..\..\scada-v6-dll\v641\ScadaCommFunc.dll</HintPath>
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommFunc.dll</HintPath>
     </Reference>
     <Reference Include="ScadaCommon">
       <HintPath>..\..\..\scada-v6-dll\v641\ScadaCommon.dll</HintPath>
