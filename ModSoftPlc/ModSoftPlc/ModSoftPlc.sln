@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModSoftPlc.View", "ModSoftP
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ModSoftPlc.Shared", "ModSoftPlc.Shared\ModSoftPlc.Shared.shproj", "{65EA41F1-5750-4CCD-8BA8-E7D8090408B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModSoftPlc.Library", "ModSoftPlc.Library\ModSoftPlc.Library.csproj", "{BAD0329D-841E-4635-9349-A3D831889D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{7CFA8426-A50A-4279-864E-C36874BC43DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CFA8426-A50A-4279-864E-C36874BC43DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CFA8426-A50A-4279-864E-C36874BC43DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD0329D-841E-4635-9349-A3D831889D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD0329D-841E-4635-9349-A3D831889D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD0329D-841E-4635-9349-A3D831889D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD0329D-841E-4635-9349-A3D831889D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
