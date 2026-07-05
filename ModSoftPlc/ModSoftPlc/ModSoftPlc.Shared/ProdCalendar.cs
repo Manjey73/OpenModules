@@ -3,12 +3,14 @@ using System.Xml.Serialization;
 namespace Scada.Server.Modules.ModSoftPlc
 {
     [Serializable]
-    public class calendar
+
+    [XmlRoot("calendar")]
+    public class CalendarFile
     {
-        public calendar()
+        public CalendarFile()
         {
-            holidays = new List<holiday>();     // Список праздников
-            days = new List<day>();             // Список дней
+            holidays = new List<Holiday>();     // Список праздников
+            days = new List<CalendarDay>();             // Список дней
         }
 
         [XmlAttribute]
@@ -25,10 +27,13 @@ namespace Scada.Server.Modules.ModSoftPlc
         public bool langSpecified { get { return lang != ""; } }
         public bool dateSpecified { get { return date != ""; } }
 
-        public List<holiday> holidays { get; set; }
-        public List<day> days { get; set; }
+        [XmlArrayItem("holiday")]
+        public List<Holiday> holidays { get; set; }
 
-        public class holiday
+        [XmlArrayItem("day")]
+        public List<CalendarDay> days { get; set; }
+
+        public class Holiday
         {
             [XmlAttribute]
             public string id { get; set; }
@@ -41,7 +46,7 @@ namespace Scada.Server.Modules.ModSoftPlc
             public bool titleSpecified { get { return title != ""; } }
         }
 
-        public class day
+        public class CalendarDay
         {
             [XmlAttribute]
             public string d { get; set; }
