@@ -16,7 +16,8 @@ The program has an index, according to the location in the settings file.
 As long as the file exists in the Storage folder, the download always takes place from it.
 To restart the program, you need to perform two identical steps.
 
-– open the module settings, change the Restart_Program setting to true in the required program, save and transfer to the server 
+– open the module settings, change the Restart_Program setting to true in the required program, save and transfer to the server
+
 – After that, open the module settings again and change the variable to false and transfer the data to the server again.
 
 This is due to the fact that the module itself cannot work with comments in xml files during serialization.
